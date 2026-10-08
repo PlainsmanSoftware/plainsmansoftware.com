@@ -108,7 +108,7 @@ section + section { border-top: 1px solid var(--line); }
 .dot.g { background: var(--profit); } .dot.y { background: #e0a526; } .dot.r { background: var(--loss); }
 
 /* Pricing */
-.plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 860px; }
+.plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1120px; }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-m); padding: 28px; display: flex; flex-direction: column; }
 .plan.pro { border: 2px solid var(--brand); }
 .plan-name { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.15rem; }
@@ -207,3 +207,5 @@ section + section { border-top: 1px solid var(--line); }
   body { background: #fff; }
   .doc .wrap { display: block; }
 }
+
+.refund-policy { color: var(--ink-2); }
